@@ -6,28 +6,36 @@ using System.Threading.Tasks;
 
 namespace OtecLibrary
 {
-    class sede
+    public class sede
     {
+        
         private int id_Sede;
-        private string Nombre;
-        private administrador Administrador;
+        private string nombre;
+        private administrador administrador;
         private List<curso> cursos;
+       
 
+        //constructor  vacio
+       
         public sede()
         {
         }
 
+       
+        //constructor con datos
+        
         public sede(int id_Sede, string nombre, administrador administrador, List<curso> cursos)
         {
-            this.id_Sede = id_Sede;
-            Nombre = nombre;
-            Administrador = administrador;
+            this.Id_Sede = id_Sede;
+            this.Nombre = nombre;
+            this.Administrador = administrador;
             this.cursos = cursos;
         }
-
+        
+        //get y set
         public int Id_Sede { get => id_Sede; set => id_Sede = value; }
-        public string Nombre1 { get => Nombre; set => Nombre = value; }
-        internal administrador Administrador1 { get => Administrador; set => Administrador = value; }
-        internal List<curso> Cursos { get => cursos; set => cursos = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public administrador Administrador { get => administrador; set => administrador = value; }
+        public List<curso> Cursos { get => cursos; set => cursos = value; }
     }
 }

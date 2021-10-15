@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OtecLibrary
 {
-    class administrador
+    public class administrador
     {
         private int cod_administrador;
         private string nombre_adm;
@@ -14,11 +14,12 @@ namespace OtecLibrary
         private string correo;
         private string direccion;
         private string telefono;
-
+        //constructor  vacio
         public administrador()
         {
         }
-
+       
+        //constructor con datos
         public administrador(int cod_administrador, string nombre_adm, string run, string correo, string direccion, string telefono)
         {
             this.cod_administrador = cod_administrador;
@@ -28,7 +29,8 @@ namespace OtecLibrary
             this.direccion = direccion;
             this.telefono = telefono;
         }
-
+       
+        //get y set
         public int Cod_administrador { get => cod_administrador; set => cod_administrador = value; }
         public string Nombre_adm { get => nombre_adm; set => nombre_adm = value; }
         public string Run { get => run; set => run = value; }

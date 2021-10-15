@@ -6,28 +6,33 @@ using System.Threading.Tasks;
 
 namespace OtecLibrary
 {
-    class curso
+    public class curso
     {
-        private int id_Curso;
-        private string nombre;
+        
         private coordinador coordinador;
-        private List<asignatura> asignatura;
-
+        private List<asignatura> asignaturas;
+        private int cod_curso;
+        private string nombre;
+        //constructor  vacio
+        
         public curso()
         {
         }
-
-        public curso(int id_Curso, string nombre, coordinador coordinador, List<asignatura> asignatura)
+        
+        //constructor con datos
+       
+        public curso(coordinador coordinador, List<asignatura> asignaturas, int cod_curso, string nombre)
         {
-            this.id_Curso = id_Curso;
-            this.nombre = nombre;
             this.coordinador = coordinador;
-            this.asignatura = asignatura;
+            this.asignaturas = asignaturas;
+            this.cod_curso = cod_curso;
+            this.nombre = nombre;
         }
-
-        public int Id_Curso { get => id_Curso; set => id_Curso = value; }
+        
+        //get y set
+        public coordinador Coordinador { get => coordinador; set => coordinador = value; }
+        public List<asignatura> Asignaturas { get => asignaturas; set => asignaturas = value; }
+        public int Cod_curso { get => cod_curso; set => cod_curso = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        internal coordinador Coordinador { get => coordinador; set => coordinador = value; }
-        internal List<asignatura> Asignatura { get => asignatura; set => asignatura = value; }
     }
 }

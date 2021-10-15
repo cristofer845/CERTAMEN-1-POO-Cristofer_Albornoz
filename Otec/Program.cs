@@ -11,7 +11,7 @@ namespace Otec
     {
         static void Main(string[] args)
         {
- 
+            //code
             asignatura asignatura = new asignatura(1, "Filosofia", "Tales de Mileto");
             coordinador coordinador = new coordinador(1, "Luis Alberto Fuenzalida", "+56923456789", "Los robles 845", "luis.alberto.fuen@gmail.com");
             administrador administrador = new administrador(1, "Tales de Mileto", "11.120.235-9", "talesdemileto@gmail.com", "los alerces 123", "+56999998888");
